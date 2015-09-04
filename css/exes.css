@@ -173,16 +173,15 @@ body{
     position: relative;
 }
 .left-sidebar .side-m-item .newaction:after{
-    width: 8px;
-    height: 8px;
-    background-color: #f00;
+    width: 6px;
+    height: 6px;
+    background: url("../img/redpointer.png") no-repeat;
     position: absolute;
-    right: 170px;
+    right: 190px;
     display: block;
     content: '.';
     font-size: 0px;
     top: 15px;
-    border-radius: 4px;
 }
 .left-sidebar .banji {
     font-size: 14px;
@@ -506,4 +505,98 @@ border-color: #f5f5f5;
 }
 .footer .about a {
     margin-right: 15px;
+}
+/*************************************************/
+.right-nav li {
+    float: left;
+    margin-right: 20px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.right-nav li.active{
+    color: #3481cb;
+}
+.right-nav li.newaction:after{
+    width: 6px;
+    height: 6px;
+    background: url("../img/redpointer.png") no-repeat;
+    position: absolute;
+    right: -10px;
+    display: block;
+    content: '.';
+    font-size: 0px;
+    top: 2px;
+}
+.right-nav {
+    height: 20px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.question-block .qurestion-title {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+.question-block .question-content {
+    padding: 0 10px;
+}
+.question-block .question-info{
+    position: relative;
+}
+.question-block .question-info img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.question-block .question-info {
+    padding: 10px 10px 5px;
+}
+.question-block .question-info .question-owner,.question-block .question-info .question-time{
+    position: relative;
+    top: -10px;
+}
+.question-block .question-info .question-time{
+    color: #999;
+    margin-left: 5px;
+}
+.question-block .question-info .question-comment{
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    cursor: pointer;
+}
+.question-comment .fa{
+    color: #999;
+    margin-right: 5px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.question-comment .arrow{
+    display: none;
+}
+.question-comment.open .arrow{
+    display: inline-block;
+}
+.right-block .comments-wrap .input-area .input-no-img {
+    width: 444px;
+    margin-left: -2px;
+}
+.input-pic-area {
+    padding: 0 15px 10px 15px;
+    color: #666;
+    cursor: pointer;
+    margin-top: -5px;
+    border-bottom: 1px solid #ddd;
+}
+.right-block .comments-wrap .answer-ul{
+    padding: 0;
+}
+.right-block .answer-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0 0;
+    font-size: 12px;
+}
+.answer-item .question-info {
+    padding: 5px 10px;
 }
