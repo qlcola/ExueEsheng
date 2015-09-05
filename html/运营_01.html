@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>运营管理01</title>
+	<link rel="stylesheet" type="text/css" href="../css/operate.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<div class="top">
+		<div class="container">
+			<span class="logowrap">
+				<img src="../img/logo.png" width="100">
+			</span>
+			<div class="top-menus">
+				<ul class="clearfix">
+					<li class="menu-item">
+						<a href="#">
+							<span class="fa fa-user"></span>
+							<span class="item-text">黄某某</span>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="#">
+							<span class="fa fa-sign-out"></span>
+							<span class="item-text">退出登录</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sub-top">
+		<div class="container">
+			<div class="sub-title">公共平台运营管理系统</div>
+		</div>
+	</div>
+	<div class="main-content">
+		<div class="container clearfix">
+			<div class="left-sidebar">
+				<div class="left-block member-count clearfix">
+					<div class="col-4">
+						<div class="source-count">24</div>
+						<div class="source-name">学校</div>
+					</div>
+					<div class="col-4">
+						<div class="source-count">56</div>
+						<div class="source-name">老师</div>
+					</div>
+					<div class="col-4">
+						<div class="source-count">402</div>
+						<div class="source-name">学生</div>
+					</div>
+				</div>
+				<div class="left-block sidebar-menu">
+					<ul class="side-m-ul">
+						<li class="side-m-item active">
+							<a href="#" class="newaction">动态</a>
+						</li>
+						<li class="side-m-item">
+							<a href="#">问答</a>
+						</li>
+						<li class="side-m-item">
+							<a href="#">收藏</a>
+						</li>
+						<li class="side-m-item">
+							<a href="#">消息</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="center">
+				<div class="right-block static-block">
+					<div class="block-title">资源统计</div>
+					<div class="block-content">
+						<div class="col-3">
+							<div class="source-count">1118</div>
+							<div class="source-name">视频</div>
+						</div>
+						<div class="col-3">
+							<div class="source-count">235</div>
+							<div class="source-name">音频</div>
+						</div>
+						<div class="col-3">
+							<div class="source-count">42</div>
+							<div class="source-name">图片</div>
+						</div>
+						<div class="col-3">
+							<div class="source-count">18</div>
+							<div class="source-name">动画</div>
+						</div>
+					</div>
+				</div>
+				<div class="btnwrap">
+					<button type="button" class="btn-orange">资源管理</button>
+				</div>
+				<div class="right-block source-block">
+					<div class="block-title">
+						公共资源体系
+						<div class="title-right blue source-manage">
+							<span class="fa fa-gear"></span>
+							<span class="t-r-text">管理</span>
+						</div>
+					</div>
+					<table class="source-table">
+						<thead>
+							<tr>
+								<th width="20%">学段</th>
+								<th width="20%">年级</th>
+								<th width="60%">科目</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="6">小学</td>
+								<td>一年级</td>
+								<td>数学；语文；英语；思想品德；社会与自然</td>
+							</tr>
+							<tr>
+								<td>二年级</td>
+								<td>数学；语文；英语；历史</td>
+							</tr>
+							<tr>
+								<td>三年级</td>
+								<td>数学；语文；英语；地理</td>
+							</tr>
+							<tr>
+								<td>四年级</td>
+								<td>数学；语文；英语；历史；思想品德</td>
+							</tr>
+							<tr>
+								<td>五年级</td>
+								<td>数学；语文；英语；历史；社会与自然</td>
+							</tr>
+							<tr>
+								<td>六年级</td>
+								<td>数学；语文；英语；历史</td>
+							</tr>
+							<tr>
+								<td rowspan="3">初中</td>
+								<td>一年级</td>
+								<td>数学；语文；英语；思想品德；社会与自然</td>
+							</tr>
+							<tr>
+								<td>二年级</td>
+								<td>数学；语文；英语；历史</td>
+							</tr>
+							<tr>
+								<td>三年级</td>
+								<td>数学；语文；英语；地理</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<p class="copyright">Copyright © 2015 一学一生教育技术(北京)有限公司    京ICP备12002058号</p>
+		</div>
+	</div>
+
+	<div class="mask"></div>
+	<div class="modal" id="source-manage-modal">
+		<div class="modal-header">管理资源体系<span class="fa fa-remove"></span></div>
+		<div class="modal-body newstyle-control">
+			<div class="leftlist">
+				<div class="listtitle clearfix">
+					<span class="col-4">启用</span>
+					<span class="col-4">学段/年级</span>
+					<span class="col-4">顺序</span>
+				</div>
+				<ul class="m-left-ul">
+					<li class="m-left-li">
+						<div class="m-left-toggle">
+							<label>
+								<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+								<span class="lbl">&nbsp;&nbsp;小学</span>
+							</label>
+							<b class="fa fa-angle-down"></b>
+						</div>
+						
+						<ul class="m-left-sub-ul">
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 一年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 二年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 三年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 四年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 五年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 六年级</span>
+								</label>
+							</li>
+						</ul>
+					</li>
+					<li class="m-left-li">
+						<div class="m-left-toggle">
+							<label>
+								<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+								<span class="lbl">&nbsp;&nbsp;初中</span>
+							</label>
+							<b class="fa fa-angle-down"></b>
+						</div>
+						<ul class="m-left-sub-ul">
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 一年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 二年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 三年级</span>
+								</label>
+							</li>
+						</ul>
+					</li>
+					<li class="m-left-li">
+						<div class="m-left-toggle">
+							<label>
+								<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+								<span class="lbl">&nbsp;&nbsp;高中</span>
+							</label>
+							<b class="fa fa-angle-down"></b>
+						</div>
+						<ul class="m-left-sub-ul">
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 一年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 二年级</span>
+								</label>
+							</li>
+							<li class="m-sub-li">
+								<label>
+									<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+									<span class="lbl"> 三年级</span>
+								</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="rightlist">
+				<div class="listtitle clearfix">
+					<span class="col-4">启用</span>
+					<span class="col-4">学段/年级</span>
+					<span class="col-4">顺序</span>
+				</div>
+				<ul class="m-right-ul">
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 数学</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 语文</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 英语</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 物理</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 化学</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 生物</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 历史</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 地理</span>
+						</label>
+					</li>
+					<li class="m-right-li">
+						<label>
+							<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+							<span class="lbl"> 政治</span>
+						</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn-orange">确定</button>
+		</div>
+	</div>
+
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(".modal").on("click",".m-left-toggle",function(){
+		if($(this).hasClass("open")){
+			var subul = $(this).parent().children(".m-left-sub-ul");
+			$(this).removeClass("open");
+			subul.css('height','0px');
+		}else{
+			$(this).addClass("open");
+			var subul = $(this).parent().children(".m-left-sub-ul");
+			subul.css('height','auto');
+			var tmph = subul.height();
+			subul.css('height',tmph +'px');
+		}
+	});
+
+	$(".fa-remove").click(function() {
+		$(this).closest('.modal').hide();
+		$(".mask").hide();
+		$("body").css("overflow","auto");
+	});
+
+	$(".source-manage").click(function() {
+		$(".mask").show();
+		$("#source-manage-modal").show();
+		$("body").css("overflow","hidden");
+	});
+});
+
+</script>
+</body>
+</html>

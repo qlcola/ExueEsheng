@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>学习情况交流工具01</title>
+	<link rel="stylesheet" type="text/css" href="../css/tools.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<button type="button" id="new-message">写信</button>
+	<div class="mask"></div>
+	<div class="modal" id="new-message-modal">
+		<div class="modal-header">写信<span class="fa fa-remove"></span></div>
+		<div class="modal-body">
+			<p class="tips">请输入学生姓名选择家长</p>
+			<div class="inputwrap">
+				<input type="text" class="receiver">
+				<span class="input-label">收件人</span>
+			</div>
+			<div class="inputwrap">
+				<input type="text" class="theme">
+				<span class="input-label">主题</span>
+			</div>
+			<textarea class="content-area"></textarea>
+			<table class="name-table">
+				<tr>
+					<td class="childtd">张某</td>
+					<td class="parenttd">张某某</td>
+				</tr>
+				<tr>
+					<td class="childtd">李某</td>
+					<td class="parenttd">王某某</td>
+				</tr>
+				<tr>
+					<td class="childtd">陈某某</td>
+					<td class="parenttd">陈某</td>
+				</tr>
+			</table>
+		</div>
+		<div class="modal-footer clearfix">
+			<div class="input-pic-area">
+				<span class="fa fa-image"></span>&nbsp;图片
+			</div>
+			<div class="foot-btn-group">
+				<button type="button" class="btn-noborder">取消</button>
+				<button type="button" class="btn-orange">确定</button>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#new-message").click(function() {
+			$("#new-message-modal").show();
+			$(".mask").show();
+			$("body").css("overflow","hidden");
+		});
+		$(".fa-remove").click(function() {
+			$(this).closest('.modal').hide();
+			$(".mask").hide();
+			$("body").css("overflow","auto");
+		});
+
+		$(".receiver").focus(function() {
+			$(".name-table").show();
+		}).click(function(event) {
+			event.stopPropagation();
+		});
+		$(".name-table td").hover(function(event) {
+			event.stopPropagation();
+			var thistr = $(this).parent('tr');
+			thistr.children('td').addClass("active");
+		},function(){
+			$(".name-table td").removeClass("active");
+		});
+		$(".name-table td").click(function(event) {
+			event.stopPropagation();
+			if($(this).hasClass('childtd')){
+				var parenttd = $(this).next('.parenttd');
+				$(".receiver").val(parenttd.html());
+			}else{
+				$(".receiver").val($(this).html());
+			}
+			$(".name-table").hide();
+		});
+		$(".modal-body").click(function(){
+			$(".name-table").hide();
+		});
+
+	});
+</script>
+</body>

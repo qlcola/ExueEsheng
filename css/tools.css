@@ -1,0 +1,132 @@
+* {
+	font-family: 'microsoft yahei';
+}
+.mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+}
+.mask, .modal {
+	display: none;
+}
+.modal {
+	position: absolute;
+	z-index: 10;
+	top: 100px;
+	background: white;
+	left: 50%;
+	border: 1px solid #ddd;
+}
+.modal .modal-header {
+	padding: 10px;
+	position: relative;
+	color: #555;
+	border-bottom: 1px solid #ddd;
+}
+.modal .modal-header .fa {
+	position: absolute;
+	right: 10px;
+	color: #ccc;
+}
+.modal .modal-header .fa:hover{
+    color: #999;
+}
+.modal .modal-body {
+	min-height: 200px;
+	position: relative;
+}
+.modal .modal-footer {
+	border-top: 1px solid #ddd;
+	padding: 10px;
+	position: relative;
+}
+#new-message-modal{
+	width: 600px;
+	margin-left: -300px;
+}
+#new-message-modal .modal-footer{
+	border: none;
+	height: 35px;
+}
+.btn-orange {
+	background: #ef7f25;
+	color: white;
+	padding: 4px 20px;
+	border: 1px solid #d15c06;
+	font-size: 14px;
+}
+.btn-noborder{
+	background: white;
+	border:none;
+	color: #555;
+}
+.modal .foot-btn-group{
+	float: right;
+}
+.modal .inputwrap{
+	position: relative;
+}
+.modal .inputwrap input[type='text']{
+	width: 515px;
+	padding: 5px 5px 5px 50px;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.modal .inputwrap .input-label{
+	position: absolute;
+	left: 16px;
+	top: 8px;
+	font-size: 14px;
+	color: #999;
+}
+.modal .tips {
+	margin: 0;
+	font-size: 13px;
+	color: #999;
+	padding: 10px;
+}
+.modal .content-area{
+	width: 562px;
+	padding: 5px;
+	margin-left: 10px;
+	height: 130px;
+}
+.modal .input-pic-area {
+	position: absolute;
+	font-size: 14px;
+	color: #666;
+	left: 10px;
+	cursor: pointer;
+	top: 5px;
+}
+.name-table {
+	width: 200px;
+	position: absolute;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	top: 74px;
+	left: 75px;
+	border-collapse: collapse;
+	display:none;
+}
+.name-table td{
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	text-align: center;
+	font-size: 13px;
+	padding: 5px;
+	cursor: pointer;
+}
+.name-table .childtd{
+	background: white;
+}
+.name-table .parenttd{
+	background: #eee;
+}
+.name-table td.active{
+	background: rgb(200, 232, 247);
+}

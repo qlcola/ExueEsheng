@@ -1,0 +1,439 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, 
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-weight: inherit; 
+    font-style: inherit; 
+    font-size: 100%; 
+    font-family: inherit; 
+    vertical-align: baseline; 
+} 
+:focus { 
+    outline: 0; 
+} 
+table { 
+    border-collapse: separate; 
+    border-spacing: 0; 
+} 
+caption, th, td { 
+    text-align: left; 
+    font-weight: normal; 
+} 
+a img, iframe { 
+    border: none; 
+} 
+ol, ul { 
+    list-style: none; 
+} 
+input, textarea, select, button { 
+    font-size: 100%; 
+    font-family: inherit; 
+} 
+select { 
+    margin: inherit; 
+} 
+/* Fixes incorrect placement of numbers in ol’s in IE6/7 */ 
+ol { margin-left:2em; } 
+/* == clearfix == */ 
+.clearfix:after { 
+    content: '.'; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+} 
+.clearfix {display: inline-block;} 
+* html .clearfix {height: 1%;} 
+.clearfix {display: block;}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/**************************************top*************************************/
+body{
+    background-color: #e9edf0;
+    font-family: 'Microsoft Yahei';
+}
+.blue{
+    color: #3481cb;
+}
+.top{
+    background-color: white;
+    height:40px;
+    width:100%;
+    border-bottom: 1px solid #ccc;
+}
+.container{
+    width:960px;
+    margin:0 auto;
+    position: relative;
+}
+.top .container{
+    height: 50px;
+}
+.top .logowrap {
+    width: 132px;
+    display: inline-block;
+    padding-top: 10px;
+}
+.menu-item {
+    float: left;
+    color: #777;
+    margin-left: 10px;
+}
+.menu-item a{
+    display:inline-block;
+    width:100%;
+    text-decoration: none;
+    padding-top: 2px;
+}
+.menu-item .fa{
+    font-size: 16px;
+    color: #aaa;
+    line-height: 38px;
+}
+.menu-item .item-text {
+    padding: 0px 10px 0px 3px;
+    line-height: 17px;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    color: #777;
+}
+.top-menus{
+    position: absolute;
+    right:0px;
+    top: 0px;
+}
+.menu-item.active .fa,.menu-item.active .item-text{
+    color: #3481cb;
+}
+.sub-top {
+    background: #3481cb;
+    color: white;
+    padding: 12px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/*********************************center***********************/
+.main-content{
+    margin-top: 40px;
+}
+.left-sidebar {
+    float: left;
+    width: 200px;
+}
+.center{
+    margin-left: 210px;
+}
+.footer {
+    padding: 20px;
+    background: white;
+    font-size: 12px;
+    color: #999;
+}
+.left-sidebar .left-block{
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom :12px;
+}
+.left-sidebar .side-m-item {
+    border-bottom: 1px solid #ddd;
+    background: #f7f7f7;
+}
+.left-sidebar .side-m-item:last-child{
+    border: none;
+}
+.left-sidebar .side-m-item.active{
+    border-left:5px solid #3481cb;
+    background: white;
+}
+.left-sidebar .side-m-item:hover{
+    background:#e9edf0;
+}
+.left-sidebar .side-m-item.active a{
+    color:#3481cb;
+}
+.left-sidebar .side-m-item a{
+    display: block;
+    text-decoration: none;
+    color: #555;
+    padding: 7px 0 7px 15px;
+    font-size: 14px;
+    position: relative;
+}
+.right-block {
+    background: white;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+/********************************************************/
+.col-4 {
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+}
+.col-3 {
+    width: 24.8%;
+    float: left;
+    text-align: center;
+    padding: 16px 0;
+    line-height: 16px;
+    border-right: 1px solid #ddd;
+}
+.col-3:last-child{
+    border-right: none;
+}
+.member-count {
+    font-size: 14px;
+}
+.member-count .source-name{
+    color: #999;
+}
+.right-block .block-title {
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.static-block .block-content {
+    height: 80px;
+}
+.static-block .source-count {
+    font-size: 20px;
+    line-height: 32px;
+    color: #3481cb;
+}
+.btn-orange {
+    background: #ef7f25;
+    color: white;
+    padding: 4px 20px;
+    border: 1px solid #d15c06;
+    font-size: 14px;
+}
+.btnwrap {
+    padding: 10px 0 0;
+    text-align: right;
+}
+.block-title .title-right{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.right-block .source-table {
+    width: 100%;
+}
+.right-block .source-table td,.right-block .source-table th{
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    padding: 10px 0;
+}
+.right-block .source-table th{
+    font-weight: bold;
+}
+.right-block.source-block{
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.right-block.source-block .block-title{
+    border-right: 1px solid #ddd;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+.modal {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    width: 500px;
+    background: white;
+    left: 50%;
+    margin-left: -250px;
+    border: 1px solid #ddd;
+}
+.modal .modal-header{
+    padding: 10px;
+    position: relative;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+.modal .modal-header .fa{
+    position: absolute;
+    right: 10px;
+    color: #ccc;
+} 
+.modal .modal-header .fa:hover{
+    color: #999;
+}
+.modal .modal-body{
+    min-height: 200px;
+}
+.modal .modal-footer{
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.modal .leftlist,.modal .rightlist {
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: top;
+    max-height: 390px;
+    overflow: auto;
+}
+.modal .leftlist{
+    width: 248px;
+}
+.modal .rightlist {
+    margin-left: -5px;
+    width: 252px;
+}
+.modal .col-4{
+    width:33%;
+    text-align: center;
+    padding: 5px 0;
+}
+.newstyle-control input[type="checkbox"]:checked, input[type="radio"]:checked, input[type="checkbox"]:focus, input[type="radio"]:focus {
+    outline: none!important;
+}
+.newstyle-control input[type="checkbox"], input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    z-index: 12;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: -5px;
+}
+.newstyle-control input[type="checkbox"] + .lbl, input[type="radio"] + .lbl {
+    position: relative;
+    z-index: 11;
+    display: inline-block;
+    margin: 0;
+    line-height: 20px;
+    min-height: 14px;
+    min-width: 14px;
+    font-weight: normal;
+}
+.newstyle-control input[type="checkbox"].ace-checkbox-2:checked + .lbl::before, input[type="radio"].ace-checkbox-2:checked + .lbl::before {
+    background-color: #f9a021;
+    border-color: #f9a021;
+    color: #FFF;
+}
+.newstyle-control input[type="checkbox"].ace-checkbox-2 + .lbl::before, input[type="radio"].ace-checkbox-2 + .lbl::before {
+    box-shadow: none;
+}
+.newstyle-control input[type="checkbox"]:checked + .lbl::before, input[type="radio"]:checked + .lbl::before {
+    display: inline-block;
+    content: '\f00c';
+    background-color: #f5f8fc;
+    border-color: #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05),inset 0 -15px 10px -12px rgba(0,0,0,0.05),inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+.newstyle-control input[type="checkbox"] + .lbl::before, input[type="radio"] + .lbl::before {
+    font-family: fontAwesome;
+    font-weight: normal;
+    font-size: 11px;
+    color: #32a3ce;
+    content: " ";
+    background-color: #fafafa;
+    border: 1px solid #CCC;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    height: 13px;
+    line-height: 13px;
+    min-width: 13px;
+    margin-right: 1px;
+}
+.newstyle-control label{
+    position: relative;
+}
+.modal .m-right-li {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+.modal .m-left-li .fa,.modal .m-right-li .fa{
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 18px;
+    color: #999;
+}
+.modal .m-left-ul{
+    border-bottom: 1px solid #ddd;
+}
+.modal .m-right-li {
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-top: none;
+}
+.modal .rightlist .listtitle{
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.modal .m-left-sub-ul{
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.modal .m-left-sub-ul li{
+    padding: 5px 0 5px 70px;
+    border-top: 1px solid #ddd;
+}
+.modal .m-left-li {
+    padding: 0;
+    position: relative;
+}
+.modal .m-left-li .m-left-toggle{
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+.modal .m-left-li .m-left-sub-ul{
+    height: 0;
+    overflow: hidden;
+}
+
+.mask,.modal{
+    display: none;
+}
+.modal {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    width: 500px;
+    background: white;
+    left: 50%;
+    margin-left: -250px;
+    border: 1px solid #ddd;
+}
+.modal .modal-header {
+    padding: 10px;
+    position: relative;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
