@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>学习任务01</title>
+	<link rel="stylesheet" type="text/css" href="../css/exes.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<div class="top">
+		<div class="container">
+			<span class="logowrap">
+				<img src="../img/logo.png">
+			</span>
+			<div class="top-menus">
+				<ul class="clearfix">
+					<li class="menu-item">
+						<a href="#">
+							<span class="fa fa-home"></span>
+							<span class="item-text">首页</span>
+						</a>
+					</li>
+					<li class="menu-item active">
+						<a href="#">
+							<span class="fa fa-book"></span>
+							<span class="item-text">学习任务</span>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="#">
+							<span class="fa fa-clipboard"></span>
+							<span class="item-text">资源库</span>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="#">
+							<span class="fa fa-user"></span>
+							<span class="item-text">黄某某</span>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="#">
+							<span class="fa fa-sign-out"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="task-menu">
+			<button type="button" class="btn btn-blue">课程同步任务</button>
+			<button type="button" class="btn btn-white">专项任务</button>
+		</div>
+		<div class="class-title">
+			<span class="active">001班</span>
+			<span>培训班</span>
+		</div>
+	</div>
+	
+	<div class="">
+		<div class="container clearfix">
+			<div class="right-calender"></div>
+			<div class="course-task">
+				<div class="class-title">
+					<span>数学</span>
+					<span class="active">语文</span>
+					<span>英语</span>
+					<span>历史</span>
+					<span>地理</span>
+					<span>政治</span>
+				</div>
+				<div class="course-detail">
+					<div class="top-tips">
+						<span class="school-name">成都外国语学校</span>
+						<span>第二课</span>
+					</div>
+					<div class="main-title">沁园春 长沙</div>
+					<div class="teacher-info">
+						<img src="../img/p8.jpg">
+						<p>李某某</p>
+						<p class="gray">语文</p>
+					</div>
+					<div class="teacher-text">今天课程的主要内容今天课程的主要内容今天课程的主要内容今天课程的主要内容今天课程的主要内容今天课程的主要内容今天课程的主要内容今天课程的主要内容今天课程的主要内容</div>
+					<div class="more-course">
+						<div class="blue-title">预习</div>
+						<p class="sub-title">阅读第三课《卜算子》</p>
+						<p class="suggestion">阅读并搜集问题</p>
+						<div class="blue-title">复习</div>
+						<p class="sub-title">重新阅读本章节并回答问题</p>
+						<p class="suggestion">不理解的知识统一做好记录</p>
+						<p class="sub-title mt15">巩固学习</p>
+						<p class="suggestion">观看以下教学内容</p>
+						<ul class="video-ul clearfix">
+							<li class="video-li">
+								<a href="#">
+									<div class="picwrap">
+										<img src="../img/p03.jpg">
+									</div>
+									<div class="textwrap">
+										<div class="text-c">速记初中数学知识点||三角函数梳理点拨</div>
+										<div class="text-time gray">2015-06-11</div>
+									</div>
+								</a>
+							</li>
+							<li class="video-li">
+								<a href="#">
+									<div class="picwrap">
+										<img src="../img/p05.jpg">
+									</div>
+									<div class="textwrap">
+										<div class="text-c">随点随看 作文提分课程||第一课</div>
+										<div class="text-time gray">2015-06-11</div>
+									</div>
+								</a>
+							</li>
+							<li class="video-li">
+								<a href="#">
+									<div class="picwrap">
+										<img src="../img/p07.jpg">
+									</div>
+									<div class="textwrap">
+										<div class="text-c">速记图像信息解析题</div>
+										<div class="text-time gray">2015-06-11</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<p class="sub-title"><i><a href="#">专项任务推荐</a></i></p>
+						<p class="suggestion"><i><a href="#">函数定义</a></i></p>
+						<p class="suggestion"><i><a href="#">著名函数理论</a></i></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="about">
+				<a href="#">关于e学e生</a>|
+				<a href="#"><span class="fa fa-apple"></span>iPhone</a>|
+				<a href="#"><span class="fa fa-android"></span>Android</a>
+			</div>
+			<p class="copyright">Copyright © 2015 一学一生教育技术(北京)有限公司    京ICP备12002058号</p>
+		</div>
+	</div>
+
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	$(".main-content").on("click",".tip-comment",function() {
+		$(this).toggleClass("open");
+		$(this).closest(".right-block").find(".comments-wrap").toggleClass("open");
+	});
+
+});
+
+</script>
+</body>
+</html>

@@ -600,3 +600,143 @@ border-color: #f5f5f5;
 .answer-item .question-info {
     padding: 5px 10px;
 }
+/*******************************************************/
+.btn {
+    border: none;
+    font-size: 14px;
+    padding: 6px 15px;
+}
+.btn-blue{
+    background-color: #3481cb;
+    color: white;
+    border: 1px solid #3481cb;
+}
+.btn-white{
+    background: white;
+    color: #555;
+    border: 1px solid #dedede;
+}
+.task-menu {
+    margin-top: 10px;
+}
+.class-title {
+    padding: 10px;
+    font-size: 14px;
+    background: white;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.class-title span{
+    width: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+.class-title span.active{
+    color: #3481cb;
+}
+.course-task {
+    width: 560px;
+}
+.gray{
+    color: #999;
+}
+
+.right-calender{
+    width: 280px;
+    background: white;
+    border: 1px solid #ddd;
+    height: 150px;
+    float: right;
+}
+.course-detail {
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.course-detail .top-tips {
+    padding: 10px;
+    font-size: 13px;
+}
+.course-detail .school-name {
+    float: right;
+    color: #999;
+}
+.course-detail .main-title {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.course-detail .teacher-info {
+    padding: 20px 10px 10px 10px;
+}
+.course-detail .teacher-info img{
+    width: 32px;
+    height: 32px;
+    float: left;
+    position: relative;
+    top: 3px;
+}
+.course-detail .teacher-info p {
+    font-size: 13px;
+    padding-left: 40px;
+}
+.course-detail .teacher-text {
+    padding: 0 10px 10px 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+.course-detail .more-course {
+    padding: 0 10px 20px;
+}
+.course-detail .blue-title {
+    font-size: 17px;
+    color: #3481cb;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.course-detail .sub-title {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.course-detail .suggestion {
+    padding-left: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.course-detail .mt15{
+    margin-top: 15px;
+}
+.course-detail .video-li .picwrap{
+    width: 165px;
+    height: 100px;
+    overflow: hidden;
+}
+.course-detail .video-li img{
+    width:100%;
+}
+.course-detail .video-li .text-c{
+    height: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+    color: #666;
+}
+.course-detail .video-li .textwrap{
+    font-size: 13px;
+    width: 165px;
+}
+.course-detail .video-li {
+    float: left;
+    margin-right: 10px;
+}
+.course-detail .video-ul {
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.course-detail .video-li a{
+    display: block;
+}
+.course-detail
