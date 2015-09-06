@@ -32,6 +32,7 @@
 	position: absolute;
 	right: 10px;
 	color: #ccc;
+	cursor: pointer;
 }
 .modal .modal-header .fa:hover{
     color: #999;
@@ -96,6 +97,7 @@
 	padding: 5px;
 	margin-left: 10px;
 	height: 130px;
+	resize: none;
 }
 .modal .input-pic-area {
 	position: absolute;
@@ -131,4 +133,93 @@
 }
 .name-table td.active{
 	background: rgb(200, 232, 247);
+}
+#new-task-modal {
+	width: 380px;
+	margin-left: -350px;
+	position: relative;
+	top: 50px;
+}
+#new-task-modal .new-task-control{
+	width: 345px;
+	padding-left: 5px;
+}
+#new-task-modal .task-des {
+	width: 347px;
+}
+#new-task-modal .modal-sub-title {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #222;
+}
+#new-task-modal .modal-body {
+	padding: 10px 0;
+}
+#new-task-modal .selected-source-ul {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 0 10px;
+}
+#new-task-modal .selected-source-li {
+	list-style: none;
+	color: #333;
+	font-size: 14px;
+}
+#new-task-modal .fa {
+	cursor: pointer;
+	color: #999;
+	margin-right: 10px;
+}
+#new-task-modal .add-source {
+	position: relative;
+	padding: 0 10px;
+}
+#new-task-modal .add-source select{
+	width: 80px;
+	/*height: 30px;*/
+}
+#new-task-modal .add-source .search-input {
+	/*height: 24px;*/
+	width: 270px;
+}
+#new-task-modal .add-source .fa-search{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+#new-task-modal .add-source .task-des{
+	margin: 7px 0 0 0;
+}
+#new-task-modal .foot-btn-group {
+	margin-bottom: 10px;
+}
+#new-task-modal .sub-modal-block {
+	position: absolute;
+	background: white;
+	top: 0px;
+	left: 390px;
+	width: 300px;
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	color: #555;
+}
+#new-task-modal .modal-sub-t {
+	font-size: 16px;
+	color: #333;
+}
+#new-task-modal .bluetext {
+	color: #2380E8;
+}
+#new-task-modal .graytext {
+	color: #999;
+	margin-top: -10px;
+	padding-left: 12px;
+}
+#new-task-modal .modal-footer {
+	height: 30px;
+}
+#new-task-modal .task-other {
+	margin-top: 5px;
 }

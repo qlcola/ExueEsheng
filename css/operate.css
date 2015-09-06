@@ -402,10 +402,6 @@ body{
     border-left: 1px solid #ddd;
 }
 .modal .m-left-sub-ul{
-    -moz-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
 }
 .modal .m-left-sub-ul li{
     padding: 5px 0 5px 70px;
@@ -421,7 +417,7 @@ body{
     cursor: pointer;
 }
 .modal .m-left-li .m-left-sub-ul{
-    height: 0;
+    display: none;
     overflow: hidden;
 }
 

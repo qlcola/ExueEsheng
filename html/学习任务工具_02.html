@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>学习任务工具02</title>
+	<link rel="stylesheet" type="text/css" href="../css/tools.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<button type="button" id="new-task">新建任务</button>
+	<div class="mask"></div>
+
+	<div class="modal" id="new-task-modal">
+		<div class="modal-header">新建任务<span class="fa fa-remove close-btn"></span></div>
+		<div class="modal-body">
+			<div class="inputwrap">
+				<input type="text" class="task-name new-task-control" placeholder="任务名称">
+			</div>
+			<textarea class="content-area task-des new-task-control" placeholder="任务描述"></textarea>
+			<div class="inputwrap">
+				<input type="text" class="task-other new-task-control" placeholder="推荐课程同步任务(选填)">
+			</div>
+			<p class="modal-sub-title">已选资源</p>
+			<ul class="selected-source-ul">
+				<li class="selected-source-li">
+					<span class="fa fa-remove"></span>
+					<span>[视频] 经典运算技巧恒等变换详解</span>
+				</li>
+				<li class="selected-source-li">
+					<span class="fa fa-remove"></span>
+					<span>[动画] 1分钟轻松掌握正弦定理</span>
+				</li>
+			</ul>
+			<p class="modal-sub-title">添加资源</p>
+			<div class="add-source">
+				<select>
+					<option>视频</option>
+					<option>音频</option>
+					<option>动画</option>
+					<option>图片</option>
+				</select>
+				<input type="text" class="search-input" placeholder="资源搜索">
+				<span class="fa fa-search"></span>
+				<textarea class="content-area task-des new-task-control"></textarea>
+			</div>
+
+		</div>
+		<div class="modal-footer clearfix">
+			<div class="foot-btn-group">
+				<button type="button" class="btn-noborder">取消</button>
+				<button type="button" class="btn-orange">确定</button>
+			</div>
+		</div>
+		<div class="sub-modal-block">
+			<p class="modal-sub-t">任务背景色规则</p>
+			<p class="bluetext">任务创建成功-->绑定-->颜色值</p>
+			<p>随机颜色取值HSB</p>
+			<p class="bluetext">H:范围0~360，不重复随机10的整数倍</p>
+			<p class="graytext">直至全部色值随机完成后，新任务重新应用以上规则</p>
+			<p class="bluetext">S:54</p>
+			<p class="bluetext">B:82</p>
+		</div>
+	</div>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#new-task").click(function() {
+			$("#new-task-modal").show();
+			$(".mask").show();
+			$("body").css("overflow","hidden");
+		});
+		$(".close-btn").click(function() {
+			$(this).closest('.modal').hide();
+			$(".mask").hide();
+			$("body").css("overflow","auto");
+		});
+
+		$('.new-task-control,.search-input').placeholder({ customClass: 'my-placeholder' });
+
+	});
+</script>
+</body>

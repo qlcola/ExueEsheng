@@ -60,7 +60,9 @@
 	
 	<div class="">
 		<div class="container clearfix">
-			<div class="right-calender"></div>
+			<div class="right-calender">
+				<div id="calendar" style="width: 280px;height: 150px;"></div>
+			</div>
 			<div class="course-task">
 				<div class="class-title">
 					<span>数学</span>
@@ -147,15 +149,19 @@
 	</div>
 
 <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/calendar.js"></script>
 
 <script>
 $(document).ready(function() {
-	$(".main-content").on("click",".tip-comment",function() {
-		$(this).toggleClass("open");
-		$(this).closest(".right-block").find(".comments-wrap").toggleClass("open");
-	});
+	showCalendar();
 
 });
+
+function showCalendar(){
+var c = new Calendar('calendar',new Date());
+	c.showUI(function(date){
+	});
+}
 
 </script>
 </body>

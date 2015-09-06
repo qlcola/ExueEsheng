@@ -356,13 +356,11 @@ $(document).ready(function() {
 		if($(this).hasClass("open")){
 			var subul = $(this).parent().children(".m-left-sub-ul");
 			$(this).removeClass("open");
-			subul.css('height','0px');
+			subul.slideUp();
 		}else{
 			$(this).addClass("open");
 			var subul = $(this).parent().children(".m-left-sub-ul");
-			subul.css('height','auto');
-			var tmph = subul.height();
-			subul.css('height',tmph +'px');
+			subul.slideDown();
 		}
 	});
 
