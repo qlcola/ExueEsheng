@@ -2,12 +2,14 @@
 	font-family: 'microsoft yahei';
 }
 .mask {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0,0,0,0.5);
+	background: #000;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
 }
 .mask, .modal {
 	display: none;
@@ -79,7 +81,7 @@
 .modal .inputwrap .input-label{
 	position: absolute;
 	left: 16px;
-	top: 9px;
+	top: 7px;
 	font-size: 14px;
 	color: #999;
 }
